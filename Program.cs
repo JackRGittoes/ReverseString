@@ -1,22 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class MainClass
+class Progrma
 {
 
     public static string FirstReverse(string str)
     {
         // Converts string to list of char's 
-        List<char> StandardString = new List<char>();
+        List<char> reversedString = new List<char>();
         foreach (char c in str)
         {
-            StandardString.Add(c);
+            reversedString.Add(c);
         }
         // Puts the list in reverse order
-        StandardString.Reverse();
+        reversedString.Reverse();
 
         // converts the list to a string of an array
-        str = new string(StandardString.ToArray());
+        str = new string(reversedString.ToArray());
         return str;
 
     }
